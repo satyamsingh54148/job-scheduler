@@ -1,6 +1,4 @@
-import { Badge, Box, Flex, Text } from "@chakra-ui/react";
-import { FaCheckCircle } from "react-icons/fa";
-import { MdDelete } from "react-icons/md";
+import { Badge, Flex, Text } from "@chakra-ui/react";
 import { Job } from "../../App";
 
 const ListJobItem = ({ job }: { job: Job }) => {
@@ -55,14 +53,6 @@ const ListJobItem = ({ job }: { job: Job }) => {
             Pending
           </Badge>
         )}
-      </Flex>
-      <Flex gap={2} alignItems={"center"}>
-        <Box color={"green.500"} cursor={"pointer"}>
-          <FaCheckCircle size={20} />
-        </Box>
-        <Box color={"red.500"} cursor={"pointer"}>
-          <MdDelete size={25} />
-        </Box>
       </Flex>
     </Flex>
   );
